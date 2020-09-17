@@ -13,6 +13,7 @@ void push(stack_t **node, unsigned int line_number)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		free(var.buff);
+		free_stack(*node);
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
