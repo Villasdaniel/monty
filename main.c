@@ -39,17 +39,17 @@ int main(int argc, char *argv[])
 			if (!operation)
 			{
 				fprintf(stderr, "L%u: unknown instruction %s\n", count_line, token);
-				fclose(var.fd);
 				free_stack(node);
 				free(var.buff);
+				fclose(var.fd);
 				exit(EXIT_FAILURE);
 			}
 			var.n = strtok(NULL, " \t\n");
 			operation(&node, count_line);
 		}
 	}
-	fclose(var.fd);
-	free_stack(node);
 	free(var.buff);
+	free_stack(node);
+	fclose(var.fd);
 	exit(EXIT_FAILURE);
 }
