@@ -41,6 +41,8 @@ int main(int argc, char *argv[])
 				fprintf(stderr, "L%u: unknown instruction %s\n", count_line, token);
 				fclose(var.fd);
 				free_stack(node);
+				free(var.buff);
+				exit(EXIT_FAILURE);
 			}
 			var.n = strtok(NULL, " \t\n");
 			operation(&node, count_line);
@@ -48,4 +50,6 @@ int main(int argc, char *argv[])
 	}
 	fclose(var.fd);
 	free_stack(node);
+	free(var.buff);
+	exit(EXIT_FAILURE);
 }
