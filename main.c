@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	stack_t *node = NULL;
 	size_t lenght = 0;
 	char *token = NULL;
-	unsigned int count_line = 0;
+	unsigned int count_line = 1;
 	void (*operation)(stack_t **stack, unsigned int line_number) = NULL;
 
 	if (argc != 2)
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	while (getline(&var.buff, &lenght, var.fd) != EOF)
 	{
 		count_line++;
-		token = strtok(var.buff, " \t\n\a");
+		token = strtok(var.buff, "\t\n ");
 		if (token != NULL && token[0] != '#')
 		{
 			operation = all(token, count_line);
