@@ -8,30 +8,28 @@
 stack_t *addnode(stack_t **head, char *n)
 {
 	stack_t *new_node;
-
+	stack_t *last = *head;
+	
 	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
+	if (!new_node)
 	{
-		fprintf(stderr, "Error: malloc failed");
-		free(var.buff);
-		free_stack(*head);
-		fclose(var.fd);
-		exit(EXIT_FAILURE);
+		fprintf(stderr, "Error: malloc failed\n");
+		free(var.buff); free_stack(*head);
+		fclose(var.fd); exit(EXIT_FAILURE);
 	}
-	if ((*head) == NULL)
+	new_node->n = atoi(n);
+	new_node->next = NULL;
+	if (!(*head))
 	{
-		new_node->n = atoi(n);
-		new_node->next = NULL;
 		new_node->prev = NULL;
-		*head = new_node;
+		(*head) = new_node;
+		return (new_node);
 	}
-	else
+	while (last->next != NULL)
 	{
-		new_node->n = atoi(n);
-		new_node->next = *head;
-		new_node->prev = (*head)->prev;
-		(*head)->prev = new_node;
-		*head = new_node;
+		last = last->next;
 	}
+	last->next = new_node;
+	new_node->prev = last;
 	return (new_node);
 }
