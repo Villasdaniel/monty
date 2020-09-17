@@ -10,8 +10,14 @@ stack_t *addnode(stack_t **head, char *n)
 	stack_t *new_node;
 
 	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
-		return (NULL);
+	if (!new_node)
+	{
+		fprintf(stderr, "Error: malloc failed\n");
+		free_stack(*head);
+		free(var.buff);
+		fclose(var.fd);
+		exit(EXIT_FAILURE);
+	}
 	if ((*head) == NULL)
 	{
 		new_node->n = *n;
