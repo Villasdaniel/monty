@@ -53,7 +53,7 @@ typedef struct var_s
 	char *n;
 } var_t;
 
-extern var_t var;
+var_t var;
 
 
 void push(stack_t **stack, unsigned int line_number);
