@@ -11,7 +11,7 @@ void pall(stack_t **node, unsigned int line_number)
 
 	while (node_pall)
 	{
-		printf("%d\n", (node_pall->n) - 48);
+		printf("%d\n", node_pall->n);
 		node_pall = node_pall->next;
 	}
 }
