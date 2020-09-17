@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * all - Short description, single line
+ * al - Short description, single line
  * @s: buffer
  * @c: line number
  * Return: function or NULL
