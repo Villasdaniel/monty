@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	stack_t *node = NULL;
 	size_t lenght = 0;
 	char *token = NULL;
-	unsigned int count_line = 1;
+	unsigned int count_line = 0;
 	void (*operation)(stack_t **stack, unsigned int line_number) = NULL;
 
 	if (argc != 2)
