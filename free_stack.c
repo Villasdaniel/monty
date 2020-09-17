@@ -10,6 +10,4 @@ void free_stack(stack_t *node)
 		free_stack(node->next);
 		free(node);
 	}
-	free(var.buff);
-	exit(EXIT_FAILURE);
 }
