@@ -71,5 +71,6 @@ void sub(stack_t **node, unsigned int line_number);
 void divi(stack_t **node, unsigned int line_number);
 void multi(stack_t **node, unsigned int line_number);
 void modu(stack_t **node, unsigned int line_number);
+void pchar(stack_t **node, unsigned int line_number);
 
 #endif

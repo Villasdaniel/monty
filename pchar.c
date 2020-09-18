@@ -1,5 +1,9 @@
 #include "monty.h"
-
+/**
+ * pchar - print the number as char
+ * @node: is the element
+ * @line_number: line number
+ */
 void pchar(stack_t **node, unsigned int line_number)
 {
         if(!node)

@@ -20,6 +20,7 @@ void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 		{"div", divi},
 		{"mul", multi},
 		{"mod", modu},
+		{"pchar", pchar},
 		{NULL, NULL}
 		};
 
