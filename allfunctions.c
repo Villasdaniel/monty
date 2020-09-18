@@ -12,6 +12,7 @@ void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 		{"pall", pall},
 		{"push", push},
 		{"pint", pint},
+		{"pop", pop}
 		{NULL, NULL}
 		};
 
