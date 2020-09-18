@@ -11,6 +11,7 @@ void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 	instruction_t functions[] = {
 		{"pall", pall},
 		{"push", push},
+		{"pint", pint},
 		{NULL, NULL}
 		};
 
