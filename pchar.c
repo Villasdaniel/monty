@@ -6,7 +6,7 @@
  */
 void pchar(stack_t **node, unsigned int line_number)
 {
-        if(!node)
+        if(!(*node))
         {
                 fprintf(stderr, "L%u: can't pchar, stack empty\n", line_number);
 		free(var.buff);
