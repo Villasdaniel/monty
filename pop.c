@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * pop - print the numbers add
+ * pop - remove the element in the top of the stack
  * @node: is the element
  * @line_number: line number
  */
