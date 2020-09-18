@@ -10,7 +10,7 @@ void pint(stack_t **node, unsigned int line_number)
 
 	if (!node)
 	{
-		fprintf(stderr, "L%u: can't pint, stack empty", line_number);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
 		free(var.buff);
 		free_stack(*node);
 		fclose(var.fd);
