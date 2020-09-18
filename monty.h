@@ -62,5 +62,6 @@ stack_t *addnode(stack_t **head, char *n);
 int _isdigit(void);
 void pall(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
+void pint(stack_t **stack, unsigned int line_number);
 
 #endif
