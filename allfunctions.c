@@ -16,6 +16,7 @@ void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
 		{NULL, NULL}
 		};
 
