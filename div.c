@@ -6,7 +6,7 @@
  */
 void div(stack_t **node, unsigned int line_number)
 {
-    if (*node == NULL || (*node)->next == NULL)
+	if (*node == NULL || (*node)->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't div, stack too short\n", line_number);
 		free(var.buff);
@@ -14,5 +14,14 @@ void div(stack_t **node, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
+	if((*node)->n = 0)
+	{
+		fprintf(stderr, "L%u: division by zero\n", line_number);
+		free(var.buff);
+		free_stack(*node);
+		fclose(var.fd);
+		exit(EXIT_FAILURE);
+	}
     (*node)->n = (*node)->next->n / (*node)->n;
+    pop(node, line_number);
 }
