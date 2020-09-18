@@ -18,7 +18,7 @@ void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 		{"nop", nop},
 		{"sub", sub},
 		{"div", divi},
-		{"mul", mul},
+		{"mul", multi},
 		{NULL, NULL}
 		};
 

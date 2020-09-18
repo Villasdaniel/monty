@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
- * mul - mul two elements.
+ * multi - mul two elements.
  * @node: is the element
  * @line_number: line number
  */
-void mul(stack_t **node, unsigned int line_number)
+void multi(stack_t **node, unsigned int line_number)
 {
     if (*node == NULL || (*node)->next == NULL)
 	{
