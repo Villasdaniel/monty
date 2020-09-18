@@ -6,7 +6,6 @@
  */
 void add(stack_t **node, unsigned int line_number)
 {
-	stack_t node_add;
     if (*node == NULL || (*node)->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't add, stack too short\n", line_number);
@@ -15,7 +14,6 @@ void add(stack_t **node, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-    node_add = (*node)->n;
+    (*node)->next->n = (*node)->n + (*node)->next->n;
 	pop(node, line_number);
-	(*node)->n += node_add;
 }
