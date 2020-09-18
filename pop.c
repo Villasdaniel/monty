@@ -16,4 +16,5 @@ void pop(stack_t **node, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
         (*node) = (*node)->next;
+	free(node_pop);
 }
