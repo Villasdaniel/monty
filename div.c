@@ -4,7 +4,7 @@
  * @node: is the element
  * @line_number: line number
  */
-void div(stack_t **node, unsigned int line_number)
+void divi(stack_t **node, unsigned int line_number)
 {
 	if (*node == NULL || (*node)->next == NULL)
 	{
@@ -14,7 +14,7 @@ void div(stack_t **node, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-	if((*node)->n = 0)
+	if((*node)->n == 0)
 	{
 		fprintf(stderr, "L%u: division by zero\n", line_number);
 		free(var.buff);
