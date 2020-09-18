@@ -22,6 +22,6 @@ void modu(stack_t **node, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-    (*node)->n = (*node)->next->n % (*node)->n;
+    (*node)->next->n = (*node)->next->n % (*node)->n;
     pop(node, line_number);
 }
