@@ -15,5 +15,4 @@ void div(stack_t **node, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
     (*node)->n = (*node)->next->n / (*node)->n;
-	pop(node, line_number);
 }
