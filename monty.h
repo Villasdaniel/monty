@@ -69,5 +69,6 @@ void add(stack_t **node, unsigned int line_number);
 void nop(stack_t **node, unsigned int line_number);
 void sub(stack_t **node, unsigned int line_number);
 void divi(stack_t **node, unsigned int line_number);
+void mul(stack_t **node, unsigned int line_number)
 
 #endif
