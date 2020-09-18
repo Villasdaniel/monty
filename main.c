@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		token = strtok(var.buff, "\t\n ");
 		if (token != NULL && token[0] != '#')
 		{
-			operation = all(token, count_line);
+			operation = al(token, count_line);
 			if (!operation)
 			{
 				fprintf(stderr, "L%u: unknown instruction %s\n", count_line, token);

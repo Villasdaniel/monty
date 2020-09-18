@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
  * all - Short description, single line
- * @string: buffer
- * @count_line: line number
+ * @s: buffer
+ * @c: line number
  * Return: function or NULL
  */
-void (*all(char *string, unsigned int count_line))(stack_t **, unsigned int)
+void (*al(char *s, unsigned int c))(stack_t **stack, unsigned int line_number)
 {
 	int i;
 	instruction_t functions[] = {
@@ -14,10 +14,10 @@ void (*all(char *string, unsigned int count_line))(stack_t **, unsigned int)
 		{NULL, NULL}
 		};
 
-	(void)count_line;
+	(void)c;
 	for (i = 0; functions[i].opcode != NULL; i++)
 	{
-		if (strcmp(string, functions[i].opcode) == 0)
+		if (strcmp(s, functions[i].opcode) == 0)
 		{
 			return (functions[i].f);
 		}
