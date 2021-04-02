@@ -19,7 +19,9 @@ pchar: Prints the char at the top of the stack, followed by a new line.
 
 ## Usage
 
+```sh
 ./monty <file.m>
+```
 
 ## Example
 
