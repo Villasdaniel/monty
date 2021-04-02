@@ -23,7 +23,7 @@ pchar: Prints the char at the top of the stack, followed by a new line.
 
 ## Examples
 
-<p>
+
 > daniel@LAPTOP:~/Holberton/monty$ cat 000.m
 > push 0
 > push 1
@@ -46,7 +46,7 @@ pchar: Prints the char at the top of the stack, followed by a new line.
 > 4
 > 5
 > 6 
-</p>
+
 
 ## Authors
 
