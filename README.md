@@ -21,7 +21,7 @@ pchar: Prints the char at the top of the stack, followed by a new line.
 
 ./monty <file.m>
 
-## Examples
+## Example
 
 ```sh
 daniel@LAPTOP:~/Holberton/monty$ cat 000.m
