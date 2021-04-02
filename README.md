@@ -24,16 +24,26 @@ pchar: Prints the char at the top of the stack, followed by a new line.
 ## Examples
 
 <p>
-daniel@LAPTOP:~/Holberton/monty$ cat 000.m \t
-push 0\t
+daniel@LAPTOP:~/Holberton/monty$ cat 000.m
+
+push 0
+
 push 1
+
 push 2
+  
   push 3
+                   
                    pall    
+
 push 4
+    
     push 5    
+      
       push    6        
-pall 
+
+pall
+ 
 daniel@LAPTOP:~/Holberton/monty$ ./monty 000.m 
 0
 1
